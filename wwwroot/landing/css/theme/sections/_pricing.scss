@@ -1,0 +1,103 @@
+// Determine bg height
+$var-section--padding__mobile: $section--padding__mobile;
+$var-section--padding__desktop: $var-section--padding__mobile;
+@if ($section--padding__desktop != null) {
+	$var-section--padding__desktop: $section--padding__desktop;
+}
+@if ($pricing--padding-b__mobile != null) {
+	$var-section--padding__mobile: $pricing--padding-b__mobile;
+	$var-section--padding__desktop: $pricing--padding-b__mobile;
+}
+@if ($pricing--padding-b__desktop != null) {
+	$var-section--padding__desktop: $pricing--padding-b__desktop;
+}
+$var-tiles-items--padding__mobile: $tiles-items--padding__mobile;
+$var-tiles-items--padding__desktop: $var-tiles-items--padding__mobile;
+@if ($tiles-items--padding__desktop != null) {
+	$var-tiles-items--padding__desktop: $tiles-items--padding__desktop;
+}
+@if ($pricing-items--padding__mobile != null) {
+	$var-tiles-items--padding__mobile: $pricing-items--padding__mobile;
+	$var-tiles-items--padding__desktop: $pricing-items--padding__mobile;
+}
+@if ($pricing-items--padding__desktop != null) {
+	$var-tiles-items--padding__desktop: $pricing-items--padding__desktop;
+}
+
+$pricing-bg--height_mobile: $var-section--padding__mobile - $var-tiles-items--padding__mobile / 2;
+$pricing-bg--height_desktop: $var-section--padding__desktop - $var-tiles-items--padding__desktop / 2;
+
+.pricing {
+
+	.has-bg-color {
+		position: relative;
+		background-color: transparent;
+		z-index: auto;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -$pricing-bg--height_mobile;
+			left: 50%;
+			width: 300%;
+			height: calc(255px + #{$pricing-bg--height_mobile});
+			transform: translateX(-50%);
+			background: get-color(dark, 1);
+			z-index: -3;
+		}
+	}    
+
+	.tiles-item-inner {
+		background: get-color(light, 1);
+	}
+}
+
+.pricing-item-header {
+	@include divider(after);
+
+	&::after {
+		max-width: 64px;
+	}
+}
+
+ul.pricing-item-features-list {
+	@include divider(after);
+
+	li {
+		margin-bottom: 0;
+		padding: 14px 0;
+		@include divider(before);
+
+		&::after {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			margin-right: 12px;
+			background-image: inline-svg('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="' + get-color(light, 2) + '" cx="12" cy="12" r="12"/><path fill="' + get-color(dark, 3) + '" fill-rule="nonzero" d="M7 11h10v2H7z"/></g></svg>');
+			background-repeat: no-repeat;
+			order: -1;
+		}
+
+		&.is-checked {
+
+			&::after {
+				background-image: inline-svg('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="' + get-color(secondary, 4) + '" cx="12" cy="12" r="12"/><path fill="' + get-color(primary, 1) + '" fill-rule="nonzero" d="M10.5 12.267l-2.5-1.6-1 1.066L10.5 16 17 9.067 16 8z"/></g></svg>');
+			}
+		}
+	}
+}
+
+@include media( '>medium' ) {
+
+	.pricing {
+
+		.has-bg-color {
+
+			&::before {
+				bottom: -$pricing-bg--height_desktop;
+				height: calc(179px + #{$pricing-bg--height_desktop});
+			}
+		}
+	}    
+}

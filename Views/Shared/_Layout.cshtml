@@ -1,0 +1,184 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+
+    @RenderSection("meta", required: false)
+
+    <link href="~/landing/css/style.min.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="~/images/landing/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/images/landing/favicon.ico" type="image/x-icon">
+
+    @*<meta name="robots" content="noindex, nofollow">*@
+    <meta name="theme-color" content="#1e597a">
+    <meta name="msapplication-navbutton-color" content="#1e597a">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1e597a">
+</head>
+
+<body class="has-animations">
+    <div class="body-wrap">
+        <header class="site-header invert-color reveal-from-top">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand">
+                    </div>
+                    <button id="header-nav-toggle" class="header-nav-toggle" aria-controls="primary-menu" aria-expanded="false">
+                        <span class="screen-reader">Menu</span>
+                        <span class="hamburger">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <nav id="header-nav" class="header-nav">
+                        <div class="header-nav-inner">
+                            <ul class="list-reset header-nav-right">
+                                <li>
+                                    <a class="button button-wide-mobile button-sm" href="/app">Log in</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="site-content">
+            @RenderBody()
+        </main>
+
+        <footer class="site-footer invert-color">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="footer-top text-xxs">
+                        <div class="footer-blocks">
+                            <div class="footer-block">
+                                <div class="brand mb-16">
+                                    <a href="#">
+                                        <img src="~/landing/images/proficient_icon_halo.png" alt="Evelyn" width="32" height="32">
+                                    </a>
+                                </div>
+                                <div class="footer-copyright">&copy; 2022 The Proficient Lab, all rights reserved</div>
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-block-title">THE COMPANY</div>
+                                <ul class="list-reset mb-0">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#intro">How it works</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#whyus">Why us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#theapp">The App</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-block-title">LET'S GET STARTED </div>
+                                <ul class="list-reset mb-0">
+                                    <li>
+                                        <a href="/#pricing">Price</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://calendly.com/the_proficient_lab/60-minutes">Schedule a demo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-block-title">RESOURCES</div>
+                                <ul class="list-reset mb-0">
+                                    <li>
+                                        <a href="https://forms.theproficientlab.com/theproficientlab/form/PrivacyPolicy/formperma/_RhUc9lAU8NK49_Q9G50KlG6k7dBoL-RJnZsDrCosAk">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://forms.theproficientlab.com/theproficientlab/form/TermsofUse/formperma/1J9z2k8imQuOBV4BIt3ovOvmBSSq4jjcyBs9u2-1XRk">Terms of use</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://forms.theproficientlab.com/theproficientlab/form/FAQs/formperma/wbygglVRey8YSEUQfDXt6BBXIo15dqMQ3m6oho_nk60">FAQ's</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#contact">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:hi@theproficientlab.com">hi@theproficientlab.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:18006210219">+1 800-621-0219</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom space-between center-content-mobile text-xxs">
+                        <div class="footer-social">
+                            <ul class="list-reset">
+                                <li>
+                                    <a href="mailto:hi@theproficientlab.com">
+                                        <svg viewBox="0 0 16 16" width="16" height="16">
+                                            <title>Email</title>
+                                            <path d="M14,1H2A2,2,0,0,0,0,3v.4L8,7.9l8-4.4V3A2,2,0,0,0,14,1Z"></path>
+                                            <path d="M7.5,9.9,0,5.7V13a2,2,0,0,0,2,2H14a2,2,0,0,0,2-2V5.7L8.5,9.9A1.243,1.243,0,0,1,7.5,9.9Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://youtube.com/channel/UCJUBgLL9k6kRVBfVdeqRVpQ">
+                                        <svg viewBox="0 0 24 24" width="24" height="24">
+                                            <title>YouTube</title>
+                                            <path d="M21.582 6.186a2.506 2.506 0 0 0-1.768-1.768C18.254 4 12 4 12 4s-6.254 0-7.814.418c-.86.23-1.538.908-1.768 1.768C2 7.746 2 12 2 12s0 4.254.418 5.814c.23.86.908 1.538 1.768 1.768C5.746 20 12 20 12 20s6.254 0 7.814-.418a2.504 2.504 0 0 0 1.768-1.768C22 16.254 22 12 22 12s0-4.254-.418-5.814zM10 14.598V9.402a.5.5 0 0 1 .75-.433l4.5 2.598a.5.5 0 0 1 0 .866l-4.5 2.598a.5.5 0 0 1-.75-.433z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/theproficientlab">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                            <title>LinkedIn</title>
+                                            <path d="M15.3 0H.7C.3 0 0 .3 0 .7v14.7c0 .3.3.6.7.6h14.7c.4 0 .7-.3.7-.7V.7c-.1-.4-.4-.7-.8-.7zM4.7 13.6H2.4V6h2.4v7.6h-.1zM3.6 5c-.8 0-1.4-.7-1.4-1.4 0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4-.1.7-.7 1.4-1.4 1.4zm10 8.6h-2.4V9.9c0-.9 0-2-1.2-2s-1.4 1-1.4 2v3.8H6.2V6h2.3v1c.3-.6 1.1-1.2 2.2-1.2 2.4 0 2.8 1.6 2.8 3.6v4.2h.1z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="~/landing/js/main.es5.min.js"></script>
+    <script src="~/landing/js/custom.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            Core.InitContact();
+        });
+    </script>
+
+    @RenderSection("scripts", required: false)
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ET05QPQDYE"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-ET05QPQDYE');
+
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.form-input {
+
+	&:focus {
+		box-shadow: 0 8px 20px rgba(get-color(dark, 1), .16);
+
+		~ .button {
+			box-shadow: 0 8px 20px rgba(get-color(dark, 1), .16);
+		}
+	}
+}

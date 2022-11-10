@@ -1,0 +1,39 @@
+[class*=illustration-] {
+	position: relative;
+
+	&::after {
+		pointer-events: none;
+	}
+}
+
+[class*=illustration-element-]::after {
+	z-index: -1;
+}
+
+[class*=illustration-section-]::after {
+	z-index: -2;
+}
+
+
+// Hero illustration
+.illustration-section-01::after {
+	@include illustration('illustration-section-01.svg', 100%, 920px, top);
+}
+
+// Signup / login illustration
+.illustration-section-02::after {
+	@include illustration('illustration-section-02.svg', 100%, 466px, top);
+}
+
+// Behind features split image
+.illustration-element-01::after {
+	@include illustration('illustration-element-01.svg', 200%, 200%);
+}
+
+.illustration-element-02::after {
+	@include illustration('illustration-element-02.svg', 200%, 200%);
+}
+
+.illustration-element-03::after {
+	@include illustration('illustration-element-03.svg', 200%, 200%);
+}

@@ -1,0 +1,40 @@
+﻿<!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+<div class="fadeRegion">
+    <div class="form">
+        <form action="#" name='contactus_form' id='contactus_form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+            <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+            <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+            <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+
+            <fieldset>
+                <div class="mb-12">
+                    <label class="form-label screen-reader" for="fname">Name</label>
+                    <input id="name" class="form-input" type="text" placeholder="Name" required maxlength="255" name="SingleLine2" fieldType=1 />
+                </div>
+                <div class="mb-12">
+                    <label class="form-label screen-reader" for="org">Organization</label>
+                    <input id="org" class="form-input" type="text" placeholder="Organization" required maxlength="255" name="SingleLine" fieldType=1 />
+                </div>
+                <div class="mb-12">
+                    <label class="form-label screen-reader" for="email">Email</label>
+                    <input id="email" class="form-input" type="text" placeholder="Email" required maxlength="255" name="Email" fieldType=9 />
+                </div>
+                <div class="mb-12">
+                    <label class="form-label screen-reader" for="ttu">Talk to us</label>
+                    <textarea id="ttu" class="form-input" type="text" placeholder="Talk to us" required maxlength="255" name="SingleLine1" fieldType=1>Talk to us</textarea>
+                </div>
+                <div class="mb-12">
+                    <div class="g-recaptcha" data-sitekey="6LcKHwAiAAAAAPz_ElP9GFIANGWdKTQjzITLCMH5" id="cptch"></div>
+                </div>
+
+                <div class="mt-24 mb-32">
+                    @*<button class="button button-primary button-block">SEND</button>*@
+                    <input type="button" id="contactus_form_submit" class="button button-primary button-block" value="SEND" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="thankyou">
+        Thank you! Our team will respond within 24 hours
+    </div>
+</div>

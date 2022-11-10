@@ -1,0 +1,20 @@
+﻿@{
+    var controller = this.ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<section class="signin section illustration-section-02" id="contact">
+    <div class="container-xs">
+        <div class="signin-inner section-inner  has-top-divider">
+            <div class="section-header center-content">
+                <h1 class="m-0">Contact</h1>
+            </div>
+            <div class="tiles-wrap">
+                <div class="tiles-item">
+                    <div class="tiles-item-inner">
+                        @Html.Partial("_ContactForm")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

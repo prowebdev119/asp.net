@@ -1,0 +1,122 @@
+﻿@{
+    var controller = this.ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<section class="pricing section">
+    <div class="container-fluid" id="pricing">
+        <div class="pricing-inner section-inner has-top-divider">
+            <div class="section-header center-content">
+                <div class="container-xs">
+                    <h2 class="mt-0 mb-16">
+                        Simple, transparent pricing
+                    </h2>
+                    <p class="m-0">
+                        30 day free trial
+                    </p>
+                </div>
+            </div>
+            <div class="pricing-switcher center-content">
+                <label class="form-switch">
+                    <input type="checkbox" />
+                    <span class="form-switch-icon"></span>
+                    <span>Billed Monthly</span>
+                    <span>Billed Annually</span>
+                </label>
+            </div>
+            <div class="tiles-wrap illustration-section-07">
+                <div class="tiles-item reveal-scale-up">
+                    <div class="tiles-item-inner has-shadow">
+                        <div class="pricing-item-content">
+                            <div class="pricing-item-header pb-16 mb-24">
+                                <div class="pricing-item-price mb-4" data-price-output='{
+                                                "0": ["$", "149", "monthly"],
+                                                "1": ["$", "134", "annually"]
+                                            }'>
+                                    <span class="pricing-item-price-currency h2 text-color-low"></span><span class="pricing-item-price-amount h1"></span>
+                                </div>
+                                <div class="text-color-low text-xs">
+                                    /month, billed <span class="pricing-item-price-after"></span>
+                                </div>
+                            </div>
+                            <div class="pricing-item-features mb-40">
+                                <div class="pricing-item-features-title fw-500 text-xs text-color-high mb-24">
+                                    Small Laboratory
+                                </div>
+                                <ul class="pricing-item-features-list list-reset text-xs mb-32">
+                                    <li class="is-checked">Up to 10 users</li>
+                                    <li class="is-checked">Up to 20 modules</li>
+                                    <li class="is-checked">Includes all features</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-item-cta mb-8">
+                            <a class="button button-secondary button-block" target="_blank" href="https://calendly.com/the_proficient_lab/60-minutes">Schedule a demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tiles-item reveal-scale-up" data-reveal-delay="200">
+                    <div class="tiles-item-inner has-shadow">
+                        <div class="pricing-item-content">
+                            <div class="pricing-item-header pb-16 mb-24">
+                                <div class="pricing-item-price mb-4" data-price-output='{
+                                                "0": ["$", "299", "monthly"],
+                                                "1": ["$", "269", "annually"]
+                                            }'>
+                                    <span class="pricing-item-price-currency h2 text-color-low"></span><span class="pricing-item-price-amount h1"></span>
+                                </div>
+                                <div class="text-color-low text-xs">
+                                    /month, billed <span class="pricing-item-price-after"></span> <b> (most popular)</b>
+                                </div>
+                                @*<img class="pricing-item-icon" src="~/landing/images/pricing-icon.svg" alt="Diamond" width="38" height="40">*@
+                            </div>
+                            <div class="pricing-item-features mb-40">
+                                <div class="pricing-item-features-title fw-500 text-xs text-color-high mb-24">
+                                    Medium Laboratory
+                                </div>
+                                <ul class="pricing-item-features-list list-reset text-xs mb-32">
+                                    <li class="is-checked">Up to 20 users</li>
+                                    <li class="is-checked">Up to 20 modules</li>
+                                    <li class="is-checked">Includes all features</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-item-cta mb-8">
+                            <a class="button button-secondary button-block" target="_blank" href="https://calendly.com/the_proficient_lab/60-minutes">Schedule a demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tiles-item reveal-scale-up" data-reveal-delay="400">
+                    <div class="tiles-item-inner has-shadow">
+                        <div class="pricing-item-content">
+                            <div class="pricing-item-header pb-16 mb-24">
+                                <div class="pricing-item-price mb-4" data-price-output='{
+                                                "0": ["$", "459", "monthly"],
+                                                "1": ["$", "413", "annually"]
+                                            }'>
+                                    <span class="pricing-item-price-currency h2 text-color-low"></span><span class="pricing-item-price-amount h1"></span>
+                                </div>
+                                <div class="text-color-low text-xs">
+                                    /month, billed <span class="pricing-item-price-after"></span>
+                                </div>
+                            </div>
+                            <div class="pricing-item-features mb-40">
+                                <div class="pricing-item-features-title fw-500 text-xs text-color-high mb-24">
+                                    Large Laboratory
+                                </div>
+                                <ul class="pricing-item-features-list list-reset text-xs mb-32">
+                                    <li class="is-checked">Up to 30 users **</li>
+                                    <li class="is-checked">Unlimited modules</li>
+                                    <li class="is-checked">Includes all features</li>
+                                </ul>
+                                <div style="float:right; font-size:0.7rem;">** more than 30 users contact our experts</div>
+                            </div>
+                        </div>
+                        <div class="pricing-item-cta mb-8">
+                            <a class="button button-secondary button-block" target="_blank" href="https://calendly.com/the_proficient_lab/60-minutes">Schedule a demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

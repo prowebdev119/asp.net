@@ -1,0 +1,38 @@
+﻿@{
+    var controller = this.ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<section class="hero section center-content invert-color illustration-section-01" style="overflow:hidden">
+    <div class="container-sm" id="intro">
+        <div class="hero-inner section-inner pb-0">
+            <div class="hero-content">
+                <h1 class="mt-0 mb-12 reveal-from-top" data-reveal-delay="150">
+                    <img src="~/landing/images/intro_logo.png" style="width:70%;" />
+                </h1>
+
+                <div class="container-xs">
+                    <p class="m-0 mb-32 reveal-from-top" data-reveal-delay="300">
+                        Training and Competency Management
+                    </p>
+                </div>
+            </div>
+            <div class="hero-figure reveal-from-bottom" data-reveal-delay="600">
+                @*<img class="has-shadow" src="images/hero-image.svg" alt="Hero image">*@
+                <div class="video">
+                    <div class="video-responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RTxhlJwHGJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xs">
+                @Html.Partial("_LearnMoreForm")
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+

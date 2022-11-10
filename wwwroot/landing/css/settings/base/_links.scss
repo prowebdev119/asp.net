@@ -1,0 +1,66 @@
+// Links
+
+// Color
+$link--color: (
+	link: 								get-color(secondary, 1),
+	link-hover: 						null,
+	header-link: 						get-color(dark, 1),
+	header-link-hover: 					null,
+	header-link-mobile: 				null,
+	header-link-mobile-hover: 			null,
+	footer-link: 						get-color(dark, 2),
+	footer-link-hover: 					get-color(secondary, 1),
+	footer-block-link: 					get-color(dark, 2),
+	footer-block-link-hover: 			get-color(secondary, 1),
+	button-link: 						get-color(dark, 3),
+	button-link-hover: 					null,
+	func-link: 							null,
+	func-link-hover: 					null,	
+	// ↓ Inverted colors
+	link-inverse: 						get-color(light, 3),
+	link-hover-inverse: 				get-color(light, 1),
+	header-link-inverse: 				get-color(light, 3),
+	header-link-hover-inverse:			get-color(light, 1),
+	footer-link-inverse: 				get-color(dark, 3),
+	footer-link-hover-inverse: 			get-color(light, 3),
+	footer-block-link-inverse: 			get-color(dark, 3),
+	footer-block-link-hover-inverse:	get-color(light, 3),
+	button-link-inverse: 				null,
+	button-link-hover-inverse:			null,
+	func-link-inverse: 					null,
+	func-link-hover-inverse:			null	
+);
+
+// Font-weight
+$link--weight: (
+	link: 				null,
+	header-link:		500,
+	footer-link:		400,
+	footer-block-link:	400,
+	button-link:		500
+);
+
+// Text decoration
+$link-main--decoration: 				underline;
+$link-main--decoration-hover: 			null;
+$link-header--decoration: 				none;
+$link-header--decoration-hover:			null;
+$link-footer--decoration: 				none;
+$link-footer--decoration-hover: 		null;
+$link-footer-block--decoration: 		none;
+$link-footer-block--decoration-hover:	null;
+$link-button--decoration: 				null;
+$link-button--decoration-hover: 		none;
+$link-func--decoration: 				null;
+$link-func--decoration-hover: 			null;
+
+// Text transform
+$link-header--transform: 		uppercase;
+$link-footer--transform: 		null;
+$link-footer-block--transform: 	null;
+$link-button--transform: 		null;
+$link-func--transform: 			null;
+
+// Don't change lines below!
+$color:			map-push($color, $link--color);
+$font--weight: 	map-push($font--weight, $link--weight);

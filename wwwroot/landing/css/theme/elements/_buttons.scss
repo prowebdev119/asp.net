@@ -1,0 +1,29 @@
+.button-dark {
+    background: linear-gradient(65deg, get-color(dark, 1) 0, get-color(dark, 2) 100%);
+    background-origin: border-box;
+    
+    &:hover {
+        background: linear-gradient(65deg, lighten(get-color(dark, 1), 1%) 0, lighten(get-color(dark, 2), 1%) 100%);
+        background-origin: border-box;
+	}
+}
+
+.button-primary {
+    background: linear-gradient(65deg, get-color(primary, 1) 0, get-color(primary, 2) 100%);
+    background-origin: border-box;
+    
+    &:hover {
+        background: linear-gradient(65deg, lighten(get-color(primary, 1), 1%) 0, lighten(get-color(primary, 2), 1%) 100%);
+        background-origin: border-box;
+	}
+}
+
+.button-secondary {
+    background: linear-gradient(65deg, get-color(secondary, 1) 0, get-color(secondary, 2) 100%);
+    background-origin: border-box;
+    
+    &:hover {
+        background: linear-gradient(65deg, lighten(get-color(secondary, 1), 1%) 0, lighten(get-color(secondary, 2), 1%) 100%);
+        background-origin: border-box;
+	}
+}
